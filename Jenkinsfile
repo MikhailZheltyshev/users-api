@@ -9,7 +9,9 @@ pipeline {
                 sh "./mvnw clean package"
             }
             stage('Test') {
-                sh "./mvnw test"
+                steps {
+                    sh "./mvnw test"
+                }
             }
         }
     }
