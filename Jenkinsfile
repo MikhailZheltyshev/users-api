@@ -4,7 +4,7 @@ pipeline {
     agent { label 'ecs-agent' }
 
     stages {
-        stage('Build') {
+        stage('Build Test Hook') {
             steps {
                 sh "./mvnw clean package"
             }
